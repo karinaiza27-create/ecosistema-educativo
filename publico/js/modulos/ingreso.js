@@ -24,16 +24,16 @@ contenido.innerHTML = `
 
       <form id="formIngreso" class="pila" novalidate>
         <div class="campo" id="grupoCorreo">
-          <label for="ingresoCorreo">Correo electrónico institucional</label>
+          <label for="ingresoCorreo">Correo institucional o usuario</label>
           <input
-            type="email"
+            type="text"
             id="ingresoCorreo"
             name="correo"
-            placeholder="usuario@unemi.edu.ec"
-            autocomplete="email"
+            placeholder="admin@demo.ec o admin"
+            autocomplete="username"
             required
           />
-          <span class="campo__error oculto" id="errorCorreo">Ingresa un correo electrónico válido.</span>
+          <span class="campo__error oculto" id="errorCorreo">Ingresa un correo o usuario válido.</span>
         </div>
 
         <div class="campo" id="grupoClave">
@@ -69,7 +69,7 @@ const btnSubmit = document.getElementById("btnSubmit");
 
 function validarCorreo() {
   const val = inputCorreo.value.trim();
-  const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val) || /^[a-zA-Z0-9_.-]+$/.test(val);
   const grupo = document.getElementById("grupoCorreo");
   const err = document.getElementById("errorCorreo");
   grupo.classList.toggle("campo--error", !ok);
@@ -105,7 +105,11 @@ form.addEventListener("submit", async (e) => {
   btnSubmit.textContent = "Verificando...";
 
   try {
-    await iniciar(inputCorreo.value.trim().toLowerCase(), inputClave.value);
+    let entrada = inputCorreo.value.trim().toLowerCase();
+    if (!entrada.includes("@")) {
+      entrada = `${entrada}@demo.ec`;
+    }
+    await iniciar(entrada, inputClave.value);
     aviso("Sesión iniciada con éxito.", "exito");
     window.location.href = "/index.html";
   } catch (error) {

@@ -1,0 +1,7 @@
+/* publico/css/modulos/ingreso.css · Estilos para el formulario de ingreso */
+
+.ingreso-contenedor {
+  max-width: 440px;
+  margin: var(--espacio-xl) auto;
+  width: 100%;
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "asi_000001",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Manejo Sostenible de Cultivos Agrícolas",
+    "descripcion": "Principios agronómicos sostenibles, agroecología, conservación y fertilidad del suelo, rotación de cultivos y control ecológico de plagas.",
+    "nivel": "MODULO 1 - Producción Agropecuaria"
+  },
+  {
+    "id": "asi_000002",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Producción pecuaria y Manejo de animales de granja",
+    "descripcion": "Técnicas de cría responsable, bienestar animal, nutrición pecuaria, pastoreo rotativo y sanidad en especies menores y mayores de granja.",
+    "nivel": "MODULO 1 - Producción Agropecuaria"
+  },
+  {
+    "id": "asi_000003",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Contaminación del agua, aire y suelo",
+    "descripcion": "Estudio de agentes contaminantes químicos, físicos y biológicos, fuentes emisoras, impactos ecosistémicos y métodos de mitigación y biorremediación.",
+    "nivel": "MODULO 2 - Cuidado del Medio Ambiente"
+  },
+  {
+    "id": "asi_000004",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Reciclaje y manejo adecuado de residuos",
+    "descripcion": "Gestión integral de residuos sólidos urbanos e industriales, economía circular, valorización de desechos orgánicos, compostaje y reciclaje.",
+    "nivel": "MODULO 2 - Cuidado del Medio Ambiente"
+  }
+]

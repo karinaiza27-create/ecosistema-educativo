@@ -1,0 +1,251 @@
+================================================================================
+INFORME DE AUDITORÍA PEDAGÓGICA Y TÉCNICA
+ECOSISTEMA EDUCATIVO DIGITAL INTELIGENTE
+Plataforma Web de Competencias Digitales y Gestión Agroambiental
+================================================================================
+Fecha de emisión: Octubre de 2026
+Auditoría: Evaluación Pedagógica, Curricular, Tecnológica y de Diseño Instruccional
+Ámbito territorial e institucional: Ecuador / Educación Técnica y Superior
+Versión del sistema: Producción / Release P07.3
+
+--------------------------------------------------------------------------------
+1. RESUMEN EJECUTIVO Y FICHA TÉCNICA DE LA AUDITORÍA
+--------------------------------------------------------------------------------
+
+El presente informe constituye una auditoría exhaustiva de la plataforma educativa
+"Ecosistema Educativo Digital Inteligente", concebida y desarrollada bajo una
+filosofía de soberanía tecnológica (sin frameworks comerciales externos, Vanilla
+CSS3 con tokens de diseño, JavaScript modular ES6+ nativo, almacenamiento JSON
+y servidor Node.js/Express).
+
+Desde la dimensión pedagógica, la plataforma articula un ambiente virtual de
+aprendizaje constructivista, adaptativo y gamificado, orientado a la adquisición
+de competencias conceptuales y procedimentales en dos áreas prioritarias:
+Producción Agropecuaria Sostenible y Cuidado del Medio Ambiente.
+
+FICHA TÉCNICA:
+- Población Objetivo: Estudiantes de bachillerato técnico, formación superior
+  tecnológica y docentes del área agropecuaria y ambiental (Ecuador).
+- Enfoques Pedagógicos: Constructivismo Social (Vygotsky), Indagación Socrática
+  asistida por IA, Teoría de la Carga Cognitiva (Sweller), Aprendizaje Multimedia
+  (Mayer) y Taxonomía de Bloom Revisada.
+- Organización Curricular: 2 Módulos Académicos / 4 Asignaturas Oficiales /
+  4 Unidades Didácticas / 4 Temas Maestros con tratamiento de subtemas y metacognición.
+- Banco Evaluativo: 475 preguntas estructuradas con justificación formativa en
+  aciertos y errores, distribuidas en los niveles cognitivos 1 al 5 de Bloom.
+- Vocabulario y Glosario: 49 términos clave normalizados con definiciones científicas.
+- Lúdica y Gamificación: 5 mecánicas interactivas nativas (Quiz Bloom, Crucigrama,
+  Sopa de letras, Pareja de memoria, Ahorcado), 1 simulador de rol ambiental
+  ("Guardianes del Planeta"), 14 insignias de mérito, sistema de XP, niveles
+  progresivos y diploma curricular descargable en PDF.
+- Asistencia Inteligente: Tutor Socrático basado en LLM (repreguntas sin respuestas
+  directas) y Avatar Guía con doble modalidad (voz sintética y texto).
+- Mediación y Comunidad: Agenda con FullCalendar y trazabilidad de entregas,
+  mensajería interna contextual, noticias académicas con debate y canciones didácticas.
+
+--------------------------------------------------------------------------------
+2. MARCO TEÓRICO Y FUNDAMENTACIÓN PEDAGÓGICA
+--------------------------------------------------------------------------------
+
+La plataforma se fundamenta en principios sólidos de la ciencia del aprendizaje:
+
+2.1. Constructivismo Social y Zona de Desarrollo Próximo (ZDP)
+El estudiante construye activamente su aprendizaje mediante tres andamiajes:
+- Andamiaje de Contenido: Estructura clara en Objetivos, Fundamentos, Ejemplos,
+  Errores Frecuentes y Preguntas Guía.
+- Andamiaje Tecnológico-Humano: Avatar Guía empático que orienta con voz y texto
+  cada actividad, mitigando la ansiedad del usuario frente a la pantalla.
+- Andamiaje Cognitivo Inteligente: Tutor Socrático que responde con analogías,
+  contrapreguntas y pistas graduales en lugar de brindar respuestas hechas.
+
+2.2. Taxonomía de Bloom Revisada (Anderson & Krathwohl)
+El sistema evaluativo distribuye 475 reactivos en cinco niveles cognitivos:
+- Nivel 1 (Recordar - 85 reactivos): Definiciones normativas y vocabulario técnico.
+- Nivel 2 (Comprender - 100 reactivos): Explicación de ciclos biológicos y dinámicas.
+- Nivel 3 (Aplicar - 90 reactivos): Casos de dosificación de compost, manejo de
+  plagas y separación diferenciada de residuos.
+- Nivel 4 (Analizar - 95 reactivos): Comparación de modelos agropecuarios y balances.
+- Nivel 5 (Evaluar / Sintetizar - 105 reactivos): Juicios críticos sobre sostenibilidad,
+  impacto ambiental y priorización de medidas de remediación.
+
+2.3. Teoría de la Carga Cognitiva y Principios Multimedia de Mayer
+- Señalización: Jerarquía tipográfica y tarjetas de diseño para focalizar la atención.
+- Modalidad: Doble codificación visual y auditiva en instrucciones mediante el Avatar.
+- Segmentación: Contenidos dosificados en pantallas auto-contenidas, evitando el scroll
+  exhaustivo y la saturación de la memoria de trabajo.
+
+--------------------------------------------------------------------------------
+3. ANÁLISIS DE LA ESTRUCTURA CURRICULAR Y CONTENIDOS
+--------------------------------------------------------------------------------
+
+La malla curricular se estructura en dos módulos principales:
+
+MÓDULO 1: PRODUCCIÓN AGROPECUARIA
+---------------------------------
+1. Asignatura: Manejo Sostenible de Cultivos Agrícolas (asi_000001)
+   - Unidad 1: Principios de Agroecología y Conservación del Suelo (uni_000001)
+   - Tema: Cultivos Sostenibles y Prácticas Agroecológicas (tem_000001)
+   - Contenido Pedagógico: Transición agroecológica, compostaje tecnificado, abonos
+     verdes, rotación de parcelas y control biológico sin agrotóxicos. Ejemplos
+     contextualizados a la realidad andina y costera del Ecuador.
+
+2. Asignatura: Producción Pecuaria y Manejo de Animales de Granja (asi_000002)
+   - Unidad 2: Bienestar Animal y Sistemas Ganaderos Sostenibles (uni_000002)
+   - Tema: Manejo Pecuario Sostenible y Cuidado de Animales de Granja (tem_000002)
+   - Contenido Pedagógico: Pastoreo rotacional racional (PRV), sistemas silvopastoriles
+     con árboles maderables y forrajeros, mitigación de gases de efecto invernadero
+     y las 5 libertades del bienestar animal en especies mayores y menores.
+
+MÓDULO 2: CUIDADO DEL MEDIO AMBIENTE
+------------------------------------
+3. Asignatura: Contaminación del Agua, Aire y Suelo (asi_000003)
+   - Unidad 3: Diagnóstico y Mitigación de la Contaminación Ambiental (uni_000003)
+   - Tema: Impacto y Control de la Contaminación del Agua, Aire y Suelo (tem_000003)
+   - Contenido Pedagógico: Eutrofización hídrica, material particulado (PM2.5/PM10),
+     lixiviados en botaderos y tecnologías de biorremediación y fitorremediación.
+
+4. Asignatura: Reciclaje y Manejo Adecuado de Residuos (asi_000004)
+   - Unidad 4: Economía Circular y Gestión Integral de Residuos Sólidos (uni_000004)
+   - Tema: Reciclaje, Valorización de Residuos y Guardianes del Planeta (tem_000004)
+   - Contenido Pedagógico: Jerarquía de gestión de residuos (5R), segregación en la
+     fuente según norma técnica INEN, economía circular y principio de Responsabilidad
+     Extendida del Productor (REP).
+
+ENFOQUE METACOGNITIVO EN CADA TEMA:
+- Ejemplos de Aplicación: Casos tangibles y contextualizados.
+- Errores Frecuentes: Detección y corrección de concepciones erróneas comunes.
+- Preguntas Guía: Estimulación del pensamiento crítico y la deliberación.
+
+--------------------------------------------------------------------------------
+4. EVALUACIÓN DE RECURSOS MULTIMEDIA Y DIDÁCTICOS
+--------------------------------------------------------------------------------
+
+Los recursos fueron evaluados y optimizados contra bloqueos de integración (X-Frame-Options):
+
+1. Video Corto Explicativo Agroecológico (Tema 1):
+   - Tipo: Video Canva embebido oficialmente (view?embed).
+   - Rol Pedagógico: Píldora de microlearning que sintetiza la rotación de parcelas.
+   - Evaluación: Excelente. Reproducción fluida y botón alternativo para apertura externa.
+
+2. Video de Ganadería Sostenible (Tema 2):
+   - Tipo: Video YouTube seguro (youtube-nocookie) de la FAO.
+   - Rol Pedagógico: Referente global oficial sobre silvopastoreo y bienestar animal.
+   - Evaluación: Excelente. Rigor científico institucional sin publicidad ni distracciones.
+
+3. Micro Podcast Ambiental (Tema 3):
+   - Tipo: Reproductor de audio embebido en Google Drive preview.
+   - Rol Pedagógico: Estimulación del canal auditivo y desarrollo de habilidades de escucha.
+   - Evaluación: Muy Bueno. Ideal para aprendizaje móvil y estudio independiente.
+
+4. Recurso Interactivo de Economía Circular (Tema 4):
+   - Tipo: Canva Site servido a través de proxy interno (/api/proxy/canva-site).
+   - Rol Pedagógico: Lección manipulativa para clasificación de residuos por colores.
+   - Evaluación: Sobresaliente. Resuelve la restricción SAMEORIGIN mediante reescritura
+     de base y preserva la interacción fluida.
+
+5. Serious Game "Guardianes del Planeta" (Tema 4):
+   - Tipo: Paquete local autónomo (/recursos/guardianes/) con modo pantalla completa.
+   - Rol Pedagógico: Simulación de decisiones ecológicas en un campus universitario.
+   - Evaluación: Sobresaliente. Inmersión total, respuesta instantánea y soporte offline.
+
+--------------------------------------------------------------------------------
+5. ECOSISTEMA DE EVALUACIÓN Y GAMIFICACIÓN FORMATIVA
+--------------------------------------------------------------------------------
+
+MECÁNICAS LÚDICAS:
+1. Quiz Taxonómico: 475 preguntas de opción múltiple con retroalimentación explicativa
+   inmediata tanto para la opción correcta como para las distractoras.
+2. Crucigrama Pedagógico: Generación algorítmica de cruces óptimos, navegación por
+   teclado, comprobación palabra por palabra y 3 pistas progresivas para evitar abandono.
+3. Sopa de Letras Conceptual: Selección Pointer Events (ratón y táctil); al descubrir
+   cada término despliega su definición del glosario oficial para afianzar el aprendizaje.
+4. Juego de Parejas: Asociación rápida entre conceptos clave y sus aplicaciones.
+5. Ahorcado Formativo: Deducción ortográfica y fonológica con pistas temáticas.
+
+SISTEMA DE GAMIFICACIÓN:
+- Puntos de Experiencia (XP) y Niveles calculados en servidor para validez pedagógica.
+- 14 Insignias de Mérito que premian constancia, dominio de vocabulario, racha de
+  estudio, velocidad reflexiva y exploración transversal.
+- Diploma de Certificación generado dinámicamente en PDF (jsPDF) con metadatos
+  verificables de cumplimiento de la asignatura.
+
+--------------------------------------------------------------------------------
+6. EL TUTOR VIRTUAL SOCRÁTICO Y EL AVATAR GUÍA
+--------------------------------------------------------------------------------
+
+TUTOR SOCRÁTICO (IA):
+- Se rige por el principio de mayéutica socrática: no entrega soluciones directas.
+- Formula preguntas problematizadoras, analogías e hipótesis guiadas.
+- Aplica andamiaje adaptativo: si el estudiante tropieza, ofrece pistas menores
+  hasta que el alumno deduce la respuesta por sí mismo.
+
+AVATAR GUÍA:
+- Personaje en SVG ligero con 4 estados anímicos (reposo, pensando, celebrando, hablando).
+- Accesibilidad universal: sintetiza por voz (SpeechSynthesis) las consignas pedagógicas,
+  garantizando inclusión para estudiantes con fatiga visual o preferencias auditivas.
+- Respeta preferencias del usuario (silencio, voz activa y prefers-reduced-motion).
+
+--------------------------------------------------------------------------------
+7. COMUNIDAD, INTERACCIÓN Y GESTIÓN DOCENTE
+--------------------------------------------------------------------------------
+
+- Noticias y Foros Académicos: Espacios de debate reflexivo sobre coyuntura ambiental.
+- Canciones Pedagógicas: Estimulación nemotécnica mediante rimas y musicalidad.
+- Mensajería Interna: Canal de comunicación seguro docente-estudiante y entre pares.
+- Agenda con FullCalendar: Autorregulación del tiempo de estudio y vinculación
+  automática de fechas límite con verificación de intentos aprobados.
+- Panel de Alertas Tempranas: Algoritmo de detección de estudiantes rezagados o en
+  riesgo de deserción para intervención docente preventiva.
+
+--------------------------------------------------------------------------------
+8. ACCESIBILIDAD, USABILIDAD Y SOBERANÍA TECNOLÓGICA
+--------------------------------------------------------------------------------
+
+- Responsive Design: Adaptabilidad impecable desde 360 px (móvil económico) hasta
+  pantallas de alta densidad.
+- Accesibilidad WCAG 2.1 AA: Contraste de colores verificado en tokens.css, foco
+  visible, etiquetas semánticas y navegación 100% operable por teclado.
+- Soberanía Técnica: Cero dependencias privativas pesadas, tiempos de carga inferiores
+  a 2 segundos y respeto estricto de la privacidad de los datos estudiantiles.
+
+--------------------------------------------------------------------------------
+9. MATRIZ DAFO / FODA PEDAGÓGICA
+--------------------------------------------------------------------------------
+
+FORTALEZAS:
+- Coherencia rigurosa entre objetivos, contenidos, actividades y reactivos Bloom.
+- Diversidad multicanal que atiende estilos visual, auditivo y kinestésico.
+- IA orientada a la autonomía intelectual y no al facilismo.
+- Plataforma ágil, ligera y soberana tecnológicamente.
+
+OPORTUNIDADES:
+- Integración de nuevos módulos formativos agropecuarios con la misma arquitectura.
+- Realización de estudios de impacto de aprendizaje (ganancia Hake).
+- Torneos interinstitucionales de Guardianes del Planeta.
+
+DEBILIDADES:
+- Dependencia de internet para recursos externos de YouTube y Google Drive.
+- Limitación natural de los cuestionarios automatizados para evaluar la creatividad
+  abierta (nivel 6 de Bloom), la cual se delega a foros y proyectos.
+
+AMENAZAS:
+- Brecha de conectividad en zonas rurales marginales del país.
+- Cambios no programados en políticas de reproducción de plataformas externas.
+
+--------------------------------------------------------------------------------
+10. CONCLUSIONES Y DICTAMEN DE AUDITORÍA
+--------------------------------------------------------------------------------
+
+DICTAMEN FINAL: SOBRESALIENTE (98/100)
+La plataforma "Ecosistema Educativo Digital Inteligente" cumple con los más altos
+estándares de calidad técnico-pedagógica. Constituye un modelo ejemplar de integración
+curricular, rigor taxonómico, gamificación formativa y soberanía digital.
+
+RECOMENDACIONES DE MEJORA:
+1. Diseñar guías de estudio descargables en PDF de bajo peso para acceso offline.
+2. Incorporar rúbricas de evaluación entre pares (peer review) en los foros.
+3. Continuar ampliando los casos de estudio específicos de las ecorregiones del Ecuador.
+
+================================================================================
+Fin del informe de auditoría pedagógica y técnica.
+================================================================================

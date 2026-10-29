@@ -1,0 +1,9 @@
+/* publico/css/modulos/prueba-datos.css · Estilos para la prueba de datos y API */
+
+.prueba-datos__panel-formulario {
+  margin-bottom: var(--espacio-xl);
+}
+
+.prueba-datos__lista {
+  margin-top: var(--espacio-m);
+}

@@ -1,0 +1,203 @@
+/* publico/css/modulos/tema.css · Estilos para la visualización y estudio del tema */
+
+.tema-estudio-layout {
+  width: 100%;
+  margin: var(--espacio-m) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.migas-pan {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-xs);
+  font-size: var(--tamano-s);
+  color: var(--texto-suave);
+}
+
+.migas-pan a {
+  color: var(--primario);
+  text-decoration: none;
+}
+
+.migas-pan a:hover {
+  text-decoration: underline;
+}
+
+.tema-hero {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.tema-hero__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+}
+
+.tema-seccion {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.tema-seccion h2 {
+  font-size: var(--tamano-xl);
+  color: var(--primario);
+  border-bottom: 1px solid var(--borde);
+  padding-bottom: var(--espacio-xs);
+  margin: 0;
+}
+
+.tema-resumen-cuerpo {
+  font-size: var(--tamano-m);
+  line-height: var(--interlineado-relajado);
+  color: var(--texto);
+}
+
+.tema-resumen-cuerpo p {
+  margin-bottom: var(--espacio-m);
+}
+
+.tema-resumen-cuerpo ul {
+  padding-left: var(--espacio-l);
+  margin-bottom: var(--espacio-m);
+}
+
+.tema-resumen-cuerpo li {
+  margin-bottom: var(--espacio-xs);
+}
+
+.recurso-video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radio-m);
+  overflow: hidden;
+  box-shadow: var(--sombra-2);
+  margin-top: var(--espacio-xs);
+}
+
+.recurso-video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.recurso-imagen {
+  margin: 0;
+  max-width: 600px;
+}
+
+.recurso-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radio-m);
+  border: 1px solid var(--borde);
+}
+
+.recursos-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.recurso-card-vista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+  padding: var(--espacio-m);
+  background-color: var(--fondo);
+  border-radius: var(--radio-m);
+  border: 1px solid var(--borde);
+}
+
+.recurso-card-vista--placeholder {
+  border: 2px dashed var(--borde);
+  padding: var(--espacio-l);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--superficie);
+  gap: var(--espacio-xs);
+}
+
+.recurso-placeholder-icono {
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-bottom: var(--espacio-xs);
+  opacity: 0.85;
+}
+
+.recurso-podcast-embed {
+  width: 100%;
+  height: 140px;
+  border-radius: var(--radio-m);
+  overflow: hidden;
+  border: 1px solid var(--borde);
+  background-color: var(--superficie);
+}
+
+.recurso-podcast-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.recurso-interactivo-embed {
+  width: 100%;
+  height: 600px;
+  border-radius: var(--radio-m);
+  overflow: hidden;
+  border: 1px solid var(--borde);
+  background-color: var(--superficie);
+}
+
+.recurso-interactivo-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.recurso-juego-card {
+  border: 2px solid var(--primario);
+  background-color: var(--superficie);
+  box-shadow: var(--sombra-2);
+}
+
+.recurso-juego-embed {
+  width: 100%;
+  height: 650px;
+  border-radius: var(--radio-m);
+  overflow: hidden;
+  border: 1px solid var(--borde);
+  background-color: #000000;
+}
+
+.recurso-juego-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.actividades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--espacio-m);
+}

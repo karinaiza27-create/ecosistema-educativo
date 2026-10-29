@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ecosistema-educativo
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: IA_PROVEEDOR
+        value: gemini
+      - key: IA_MODELO
+        value: gemini-2.5-flash
+      - key: IA_CLAVE
+        sync: false

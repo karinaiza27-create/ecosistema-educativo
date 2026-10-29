@@ -1,0 +1,78 @@
+/* publico/css/modulos/actividades.css · Estilos para el catálogo de actividades pedagógicas */
+
+.actividades-catalogo {
+  margin-top: var(--espacio-m);
+  margin-bottom: var(--espacio-xxl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.actividades-catalogo__cabecera h1 {
+  font-size: var(--tamano-xl);
+  margin-bottom: var(--espacio-xs);
+  color: var(--texto-principal);
+}
+
+.actividades-catalogo__cabecera p {
+  color: var(--texto-secundario);
+  font-size: var(--tamano-s);
+  margin: 0;
+}
+
+.actividades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--espacio-l);
+}
+
+.actividad-card {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+  transition: transform var(--transicion), box-shadow var(--transicion), border-color var(--transicion);
+}
+
+.actividad-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-m);
+  border-color: var(--primario);
+}
+
+.actividad-card__icono {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radio-m);
+  background: var(--primario-ligero, rgba(27, 94, 32, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.actividad-card__titulo {
+  font-size: var(--tamano-l);
+  font-weight: var(--peso-negrita);
+  color: var(--texto-principal);
+  margin-top: var(--espacio-xs);
+  margin-bottom: var(--espacio-xs);
+}
+
+.actividad-card__descripcion {
+  font-size: var(--tamano-s);
+  color: var(--texto-secundario);
+  line-height: var(--linea-normal);
+  margin: 0;
+  flex: 1;
+}
+
+.actividad-card__pie {
+  margin-top: var(--espacio-s);
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "tem_000001",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "unidadId": "uni_000001",
+    "titulo": "Cultivos Sostenibles y Prácticas Agroecológicas",
+    "orden": 1,
+    "objetivos": [
+      "Comprender los principios fundamentales del manejo agronómico ecológico y sostenible.",
+      "Identificar técnicas de conservación del suelo, rotación de cultivos y control biológico de plagas.",
+      "Reconocer la importancia de la fertilidad edáfica y el uso eficiente del agua en la agricultura."
+    ],
+    "resumen": "El manejo sostenible de cultivos agrícolas integra saberes agronómicos y ecológicos orientados a proteger la salud del suelo, optimizar el uso de recursos hídricos y fomentar la biodiversidad funcional. A través de la rotación de cultivos, la siembra de coberturas vegetales, el compostaje y el manejo integrado de plagas mediante enemigos naturales, se minimiza la dependencia de agroquímicos sintéticos y se fortalece la resiliencia productiva.",
+    "ejemplos": [
+      "Asociación de cultivos de maíz con leguminosas para fijación simbiótica de nitrógeno.",
+      "Aplicación de abonos verdes y mulching orgánico para conservar humedad edáfica.",
+      "Implementación de barreras vivas contra la erosión eólica e hídrica."
+    ],
+    "erroresFrecuentes": [
+      "Creer que la agricultura sostenible no requiere fertilización ni control sanitario planificado.",
+      "Confundir labranza intensiva con preparación adecuada del suelo, acelerando su erosión.",
+      "Ignorar los ciclos biológicos de las plagas y aplicar insecticidas de amplio espectro."
+    ],
+    "preguntasGuia": [
+      "¿Por qué la rotación de cultivos interrumpe los ciclos de patógenos y plagas?",
+      "¿Cómo contribuye la materia orgánica a la estructura y retención hídrica del suelo?",
+      "¿Qué ventajas económicas y ambientales ofrece el control biológico frente al químico?"
+    ],
+    "recursos": [
+      {
+        "tipo": "video",
+        "titulo": "Video Corto Explicativo · Prácticas Agroecológicas y Cultivos Sostenibles",
+        "url": "https://www.canva.com/design/DAHXlWC-aCo/1Jtlhz8sXSxPmI9QjSs1gQ/view?embed",
+        "enlaceExterno": "https://canva.link/wg8ok4mz50odujq"
+      }
+    ],
+    "palabrasClave": [
+      "agroecología",
+      "suelo",
+      "cultivo",
+      "rotación",
+      "abono",
+      "compost"
+    ],
+    "dificultad": "media",
+    "fuentes": "FAO, INIAP Ecuador, Guías de Manejo Agroecológico",
+    "estado": "publicado"
+  },
+  {
+    "id": "tem_000002",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "unidadId": "uni_000002",
+    "titulo": "Manejo Pecuario Sostenible y Cuidado de Animales de Granja",
+    "orden": 1,
+    "objetivos": [
+      "Analizar los fundamentos del bienestar animal y su relación con la productividad sostenible.",
+      "Diseñar sistemas de pastoreo rotacional racional y alimentación balanceada con forrajes locales.",
+      "Aplicar protocolos de bioseguridad, sanidad preventiva e instalaciones adecuadas para animales de granja."
+    ],
+    "resumen": "La producción pecuaria sostenible promueve el bienestar físico y etológico de los animales de granja (bovinos, porcinos, aves, ovinos y caprinos), asegurando condiciones de confort, hidratación limpia, ventilación y sanidad preventiva. Los sistemas silvopastoriles y el pastoreo racional Voisin permiten aprovechar pasturas con alta carga biológica, regenerando los suelos y reduciendo la huella de carbono de la ganadería.",
+    "ejemplos": [
+      "Sistemas silvopastoriles con árboles maderables, arbustos forrajeros y gramíneas.",
+      "Pastoreo rotacional en potreros con tiempos controlados de ocupación y descanso.",
+      "Camas profundas en crianza avícola y porcina para elaboración posterior de bioles y compost."
+    ],
+    "erroresFrecuentes": [
+      "Sobrepastorear potreros provocando compactación del suelo y pérdida de forraje nutritivo.",
+      "Usar antibióticos como promotores preventivos de crecimiento en lugar de higiene y vacunación.",
+      "Descuidar la sombra y el acceso permanente a agua fresca y limpia para el ganado."
+    ],
+    "preguntasGuia": [
+      "¿Cuáles son las cinco libertades fundamentales del bienestar animal en granjas?",
+      "¿Cómo influyen los sistemas silvopastoriles en el confort térmico del ganado?",
+      "¿Qué medidas de bioseguridad impiden el ingreso de enfermedades infecciosas a la granja?"
+    ],
+    "recursos": [
+      {
+        "tipo": "video",
+        "titulo": "Video Educativo · Ganadería Sostenible y Manejo Pecuario (FAO)",
+        "url": "https://www.youtube.com/watch?v=Kl02saCWAOc",
+        "enlaceExterno": "https://www.youtube.com/watch?v=Kl02saCWAOc"
+      }
+    ],
+    "palabrasClave": [
+      "pecuario",
+      "pastoreo",
+      "bienestar",
+      "forraje",
+      "ganado",
+      "bioseguridad"
+    ],
+    "dificultad": "media",
+    "fuentes": "OIE, Agrocalidad, Manuales de Bienestar Pecuario",
+    "estado": "publicado"
+  },
+  {
+    "id": "tem_000003",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "unidadId": "uni_000003",
+    "titulo": "Impacto y Control de la Contaminación del Agua, Aire y Suelo",
+    "orden": 1,
+    "objetivos": [
+      "Identificar las fuentes antropogénicas y naturales de contaminación en agua, aire y suelo.",
+      "Analizar los efectos de contaminantes persistentes sobre la salud humana y los ecosistemas.",
+      "Explorar tecnologías de remediación ambiental, monitoreo de calidad y legislación protectora."
+    ],
+    "resumen": "La degradación ambiental por contaminación es uno de los mayores desafíos planetarios. En el agua, vertidos industriales y aguas servidas sin tratamiento provocan eutrofización y toxicidad; en el aire, material particulado y gases de combustión alteran la atmósfera y la salud respiratoria; y en el suelo, metales pesados y lixiviados degradan la fertilidad y contaminan cadenas tróficas. Comprender sus mecanismos permite aplicar medidas correctivas y tecnologías de biorremediación.",
+    "ejemplos": [
+      "Humedales artificiales con plantas macrofitas para depuración de aguas residuales.",
+      "Filtros de mangas y precipitadores electrostáticos en calderas industriales para control de emisiones.",
+      "Fitorremediación de suelos agrícolas contaminados con hidrocarburos o pesticidas."
+    ],
+    "erroresFrecuentes": [
+      "Creer que la disolución de efluentes en cuerpos de agua elimina la carga contaminante.",
+      "Confundir gases de efecto invernadero con contaminantes atmosféricos de toxicidad directa.",
+      "Considerar que el suelo tiene capacidad amortiguadora ilimitada ante vertidos químicos."
+    ],
+    "preguntasGuia": [
+      "¿Qué parámetros fisicoquímicos determinan el índice de calidad del agua (ICA)?",
+      "¿Cómo se forman los contaminantes secundarios como el ozono troposférico y la lluvia ácida?",
+      "¿Qué mecanismos biológicos emplean los microorganismos en la biorremediación de suelos?"
+    ],
+    "recursos": [
+      {
+        "tipo": "podcast",
+        "titulo": "Micro Podcast · Contaminación del Agua, Aire y Suelo",
+        "url": "https://drive.google.com/file/d/1lbD4dHr1Ff38Sb1k8ouWXw_ifM-KkB7J/view?usp=drive_link"
+      }
+    ],
+    "palabrasClave": [
+      "contaminación",
+      "emisiones",
+      "lixiviado",
+      "biorremediación",
+      "efluente",
+      "partículas"
+    ],
+    "dificultad": "media",
+    "fuentes": "OMS, Ministerio del Ambiente del Ecuador, EPA",
+    "estado": "publicado"
+  },
+  {
+    "id": "tem_000004",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "unidadId": "uni_000004",
+    "titulo": "Reciclaje, Valorización de Residuos y Guardianes del Planeta",
+    "orden": 1,
+    "objetivos": [
+      "Aplicar la jerarquía de gestión de residuos: reducir, reutilizar, reciclar y valorizar.",
+      "Diferenciar tipos de residuos sólidos y sus rutas de aprovechamiento en la economía circular.",
+      "Fomentar la participación activa ciudadana mediante herramientas lúdicas e interactivas."
+    ],
+    "resumen": "La transición desde una economía lineal hacia un modelo circular exige transformar los residuos en recursos útiles. La clasificación en la fuente de plásticos, metales, vidrio, papel y cartón permite reintegrarlos a cadenas productivas, mientras que la fracción orgánica se aprovecha mediante compostaje o biodigestión. La educación ambiental interactiva y la gamificación potencian hábitos sostenibles en las nuevas generaciones.",
+    "ejemplos": [
+      "Separación diferenciada en contenedores codificados por colores bajo norma técnica.",
+      "Transformación de restos orgánicos escolares y del hogar en compost nutritivo para huertos.",
+      "Upcycling o supra-reciclaje de llantas y envases plásticos en mobiliario didáctico."
+    ],
+    "erroresFrecuentes": [
+      "Depositar envases sucios o con residuos orgánicos en contenedores de reciclaje de papel o cartón.",
+      "Creer que todo plástico es reciclable mecánicamente sin clasificar polímeros (PET, PEAD, etc.).",
+      "Pensar que el reciclaje reemplaza la necesidad primordial de reducir el consumo innecesario."
+    ],
+    "preguntasGuia": [
+      "¿Cuál es la diferencia entre reciclaje mecánico y reciclaje químico?",
+      "¿Cómo funciona el principio de Responsabilidad Extendida del Productor (REP)?",
+      "¿Qué impacto positivo genera la economía circular en la mitigación de gases de efecto invernadero?"
+    ],
+    "recursos": [
+      {
+        "tipo": "interactivo",
+        "titulo": "Recurso Interactivo · Reciclaje y Manejo Adecuado de Residuos",
+        "url": "/api/proxy/canva-site",
+        "enlaceExterno": "https://reciclaje-y-manejo-adecuado-de-residuos.my.canva.site"
+      },
+      {
+        "tipo": "juego",
+        "titulo": "Juego Educativo · Guardianes del Planeta",
+        "url": "/recursos/guardianes/index.html",
+        "enlaceExterno": "https://cute-zabaione-72c640.netlify.app"
+      }
+    ],
+    "palabrasClave": [
+      "reciclaje",
+      "residuos",
+      "compostaje",
+      "circular",
+      "valorización",
+      "plásticos"
+    ],
+    "dificultad": "media",
+    "fuentes": "PNUMA, Ley Orgánica de Economía Circular Inclusiva Ecuador",
+    "estado": "publicado"
+  }
+]

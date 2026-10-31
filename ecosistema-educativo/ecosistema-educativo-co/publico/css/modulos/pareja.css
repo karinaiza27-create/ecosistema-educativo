@@ -1,0 +1,201 @@
+/* publico/css/modulos/pareja.css · Estilos para el juego pedagógico Encuentra la Pareja */
+
+.pareja-juego {
+  margin-top: var(--espacio-m);
+  margin-bottom: var(--espacio-xxl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pareja__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  padding-bottom: var(--espacio-m);
+  border-bottom: 1px solid var(--borde);
+}
+
+.pareja__tema-info {
+  font-size: var(--tamano-s);
+  color: var(--primario);
+  font-weight: var(--peso-medio);
+}
+
+/* Panel de controles y métricas en vivo */
+.pareja__marcador-panel {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m) var(--espacio-l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  box-shadow: var(--sombra-s);
+}
+
+.pareja__metricas {
+  display: flex;
+  gap: var(--espacio-l);
+  align-items: center;
+}
+
+.pareja__metrica-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.pareja__metrica-num {
+  font-size: var(--tamano-l);
+  font-weight: var(--peso-negrita);
+  color: var(--primario);
+  line-height: 1.1;
+}
+
+.pareja__metrica-label {
+  font-size: var(--tamano-xs);
+  color: var(--texto-secundario);
+  text-transform: uppercase;
+}
+
+/* Cuadrícula de tarjetas */
+.pareja__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: var(--espacio-m);
+}
+
+@media (min-width: 600px) {
+  .pareja__grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+/* Tarjeta con efecto 3D flip */
+.carta-pareja {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  aspect-ratio: 3 / 4;
+  perspective: 1000px;
+  border-radius: var(--radio-m);
+  user-select: none;
+}
+
+.carta-pareja:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 3px;
+}
+
+.carta-pareja__interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  border-radius: var(--radio-m);
+}
+
+/* Volteo */
+.carta-pareja--volteada .carta-pareja__interior,
+.carta-pareja--emparejada .carta-pareja__interior {
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carta-pareja__interior {
+    transition: none;
+  }
+}
+
+/* Cara frontal (cubierta / reverso boca abajo) */
+.carta-pareja__frente,
+.carta-pareja__dorso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--radio-m);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--espacio-s);
+  border: 2px solid var(--borde);
+  box-shadow: var(--sombra-s);
+  overflow: hidden;
+}
+
+.carta-pareja__frente {
+  background: linear-gradient(135deg, var(--primario), var(--primario-oscuro));
+  color: var(--texto-inverso);
+}
+
+.carta-pareja__frente-icono {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.carta-pareja__frente-sub {
+  font-size: var(--tamano-xs);
+  opacity: 0.8;
+  margin-top: var(--espacio-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Cara posterior (contenido expuesto) */
+.carta-pareja__dorso {
+  background: var(--superficie);
+  color: var(--texto-principal);
+  transform: rotateY(180deg);
+  border-color: var(--primario);
+  overflow-y: auto;
+}
+
+.carta-pareja__tipo {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: var(--peso-negrita);
+  color: var(--primario);
+  margin-bottom: var(--espacio-xs);
+}
+
+.carta-pareja__texto {
+  font-size: var(--tamano-xs);
+  line-height: var(--linea-apretada);
+  word-break: break-word;
+}
+
+.carta-pareja__texto--termino {
+  font-size: var(--tamano-s);
+  font-weight: var(--peso-negrita);
+  color: var(--primario-oscuro);
+}
+
+/* Estado emparejada exitosa */
+.carta-pareja--emparejada {
+  cursor: default;
+}
+
+.carta-pareja--emparejada .carta-pareja__dorso {
+  border-color: var(--exito);
+  background-color: rgba(46, 125, 50, 0.08);
+}
+
+.carta-pareja--emparejada .carta-pareja__tipo {
+  color: var(--exito);
+}

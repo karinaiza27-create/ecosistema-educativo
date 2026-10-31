@@ -1,0 +1,362 @@
+[
+  {
+    "id": "glo_000001",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Abono",
+    "definicion": "Sustancia orgánica o mineral que mejora la fertilidad del suelo y aporta nutrientes a las plantas.",
+    "pista": "Nutriente para la tierra y los cultivos.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000002",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Suelo",
+    "definicion": "Capa superficial de la corteza terrestre que sustenta la vida vegetal y los ecosistemas.",
+    "pista": "Sustrato vital para el crecimiento agrícola.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000003",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Compost",
+    "definicion": "Abono orgánico obtenido de la descomposición controlada de restos biológicos y vegetales.",
+    "pista": "Abono natural producto de restos orgánicos.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000004",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Rotacion",
+    "definicion": "Alternancia secuencial de diferentes especies de plantas en una misma parcela de cultivo.",
+    "pista": "Cambiar de cultivo para no agotar el suelo.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000005",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Cultivo",
+    "definicion": "Práctica agronómica de siembra, cuidado y cosecha de especies vegetales útiles.",
+    "pista": "Plantación cuidada con fines alimentarios o productivos.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000006",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Biomasa",
+    "definicion": "Materia orgánica vegetal o animal aprovechable para energía, acolchado o fertilización.",
+    "pista": "Materia biológica útil en el agro.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000007",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Cobertura",
+    "definicion": "Manto vegetal vivo o acolchado orgánico que protege el suelo contra la erosión y deshidratación.",
+    "pista": "Manto protector para retener humedad.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000008",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Fertilidad",
+    "definicion": "Capacidad edáfica de suministrar agua y nutrientes en proporciones ideales para las plantas.",
+    "pista": "Riqueza productiva del suelo.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000009",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000001",
+    "termino": "Agroecologia",
+    "definicion": "Enfoque agronómico que aplica principios ecológicos al diseño y gestión de sistemas agrícolas.",
+    "pista": "Agricultura en armonía con la ecología.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000010",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Pastoreo",
+    "definicion": "Alimentación directa del ganado mediante el consumo de pasturas en potreros seleccionados.",
+    "pista": "Animales comiendo hierba en el campo.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000011",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Ganado",
+    "definicion": "Conjunto de animales criados en explotaciones pecuarias para trabajo o producción de alimentos.",
+    "pista": "Animales domésticos de granja.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000012",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Forraje",
+    "definicion": "Plantas gramíneas o leguminosas cultivadas específicamente para nutrir al ganado.",
+    "pista": "Hierba y plantas nutritivas para animales.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000013",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Bienestar",
+    "definicion": "Estado integral de salud, confort, nutrición y ausencia de estrés en los animales de granja.",
+    "pista": "Vida digna y saludable para los animales.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000014",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Potrero",
+    "definicion": "Área de terreno cercada con pastos delimitada para el pastoreo ordenado del ganado.",
+    "pista": "División de tierra para animales.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000015",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Racion",
+    "definicion": "Porción diaria balanceada de alimento formulada para cubrir las necesidades fisiológicas del animal.",
+    "pista": "Cantidad diaria de comida balanceada.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000016",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Sanidad",
+    "definicion": "Conjunto de medidas higiénicas y sanitarias para prevenir y controlar enfermedades animales.",
+    "pista": "Salud y prevención veterinaria.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000017",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Pradera",
+    "definicion": "Ecosistema herbáceo abierto caracterizado por pastos continuos aptos para pastoreo pecuario.",
+    "pista": "Campo verde extenso con pasto.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000018",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000002",
+    "termino": "Nutricion",
+    "definicion": "Aporte de proteínas, energía, minerales y agua requeridos para el crecimiento y salud animal.",
+    "pista": "Alimentación balanceada para el desarrollo.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000019",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Agua",
+    "definicion": "Recurso natural indispensable para la vida, vulnerable a contaminantes químicos y patógenos.",
+    "pista": "Líquido vital indispensable.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000020",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Aire",
+    "definicion": "Capa atmosférica respirable que puede ser alterada por gases tóxicos y partículas en suspensión.",
+    "pista": "Mezcla de gases que respiramos.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000021",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Suelo",
+    "definicion": "Cuerpo edáfico que acumula metales pesados y agroquímicos si no se gestionan adecuadamente.",
+    "pista": "Tierra afectada por sustancias químicas.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000022",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Emision",
+    "definicion": "Liberación directa de contaminantes gaseosos o particulados hacia la atmósfera.",
+    "pista": "Expulsión de gases contaminantes.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000023",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Efluente",
+    "definicion": "Descarga líquida de origen doméstico o industrial vertida hacia ríos, lagos o mares.",
+    "pista": "Agua residual vertida en la naturaleza.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000024",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Lixiviado",
+    "definicion": "Líquido altamente contaminante generado por la filtración de agua a través de residuos sólidos.",
+    "pista": "Líquido tóxico filtrado de la basura.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000025",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Polucion",
+    "definicion": "Presencia de sustancias o formas de energía nocivas en el medio ambiente que alteran su equilibrio.",
+    "pista": "Contaminación dañina del ambiente.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000026",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Particulas",
+    "definicion": "Material microscópico sólido o líquido suspendido en el aire que ingresa al sistema respiratorio.",
+    "pista": "Polvo fino suspendido en la atmósfera.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000027",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000003",
+    "termino": "Remediacion",
+    "definicion": "Conjunto de métodos biológicos o químicos para eliminar contaminantes y restaurar un área afectada.",
+    "pista": "Limpieza y sanación de un ecosistema.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000028",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Reciclaje",
+    "definicion": "Transformación de residuos aprovechables para reincorporarlos como materia prima en nuevos ciclos.",
+    "pista": "Procesar materiales para reutilizarlos.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000029",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Residuo",
+    "definicion": "Cualquier material o sustancia sobrante susceptible de ser clasificado, reutilizado o valorizado.",
+    "pista": "Objeto o material desechado.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000030",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Plastico",
+    "definicion": "Polímero sintético moldeable que requiere recolección selectiva para evitar acumulación ambiental.",
+    "pista": "Material sintético común en envases.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000031",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Vidrio",
+    "definicion": "Material inorgánico transparente y duro, 100% reciclable de forma infinita sin perder calidad.",
+    "pista": "Material reciclable de botellas y frascos.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000032",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Carton",
+    "definicion": "Lámina gruesa de fibras de celulosa reciclables utilizada en empaques y embalajes.",
+    "pista": "Empaque reciclable de celulosa.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000033",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Compostaje",
+    "definicion": "Tratamiento biológico aerobio de residuos orgánicos para transformarlos en abono enriquecido.",
+    "pista": "Convertir sobras de comida en abono.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000034",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Reutilizar",
+    "definicion": "Dar un nuevo uso a un producto o envase para alargar su vida útil antes de reciclarlo.",
+    "pista": "Usar otra vez un objeto sin botarlo.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000035",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Separacion",
+    "definicion": "Clasificación inicial de los residuos en el hogar o escuela en contenedores diferenciados.",
+    "pista": "Ordenar la basura según su tipo.",
+    "origen": "docente",
+    "estado": "aprobado"
+  },
+  {
+    "id": "glo_000036",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "temaId": "tem_000004",
+    "termino": "Circular",
+    "definicion": "Economía que busca mantener productos, materiales y recursos en uso constante sin generar basura.",
+    "pista": "Modelo económico que no genera desechos.",
+    "origen": "docente",
+    "estado": "aprobado"
+  }
+]

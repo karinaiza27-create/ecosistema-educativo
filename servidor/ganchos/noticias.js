@@ -1,14 +1,8 @@
 // servidor/ganchos/noticias.js · Reglas de seguridad y publicación para noticias
 
 export async function filtrarLista(lista, usuario) {
-  if (!Array.isArray(lista) || !usuario) return [];
-
-  // Los estudiantes solo ven las noticias con estado "publicado"
-  if (usuario.rol === "estudiante") {
-    return lista.filter((n) => n && n.estado === "publicado");
-  }
-
-  // Docentes y administradores ven todas (publicadas y borradores)
+  if (!Array.isArray(lista)) return [];
+  // Todos los roles (docente, estudiante y visitantes generales) ven las noticias
   return lista;
 }
 
@@ -24,10 +18,14 @@ export async function antesDeGuardar(datos, usuario, anterior) {
     copia.autorId = anterior.autorId || (usuario ? usuario.id : null);
   }
 
-  // Fija fechaPublicacion cuando el estado pasa a "publicado"
+  // Por defecto, las noticias se crean publicadas para que sean visibles para todos
+  if (!copia.estado) {
+    copia.estado = "publicado";
+  }
+
   if (copia.estado === "publicado") {
-    if (!anterior || anterior.estado !== "publicado" || !anterior.fechaPublicacion) {
-      copia.fechaPublicacion = new Date().toISOString();
+    if (!anterior || !anterior.fechaPublicacion) {
+      copia.fechaPublicacion = copia.fechaPublicacion || new Date().toISOString();
     } else {
       copia.fechaPublicacion = anterior.fechaPublicacion;
     }

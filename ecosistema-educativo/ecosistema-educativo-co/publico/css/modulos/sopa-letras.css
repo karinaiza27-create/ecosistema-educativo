@@ -1,0 +1,229 @@
+/* publico/css/modulos/sopa-letras.css · Estilos de la Sopa de Letras pedagógica */
+
+.sopa-juego {
+  padding: var(--espacio-l) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.sopa-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-s);
+  background-color: var(--superficie);
+  padding: var(--espacio-m);
+  border-radius: var(--radio-l);
+  border: 1px solid var(--borde);
+  box-shadow: var(--sombra-1);
+}
+
+.sopa-cabecera__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sopa-cabecera__titulo {
+  font-size: var(--tamano-l);
+  font-weight: var(--peso-negrita);
+  color: var(--primario);
+  margin: 0;
+}
+
+.sopa-cabecera__tema {
+  font-size: var(--tamano-xs);
+  color: var(--texto-secundario);
+}
+
+.sopa-cabecera__stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+}
+
+.sopa-stat {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  font-size: var(--tamano-s);
+  font-weight: var(--peso-medio);
+}
+
+.sopa-stat__badge {
+  background-color: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-s);
+  padding: 3px 8px;
+  font-family: monospace;
+  font-size: var(--tamano-m);
+  font-weight: var(--peso-negrita);
+  color: var(--primario);
+}
+
+.sopa-controles {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-s);
+}
+
+/* Disposición principal: Cuadrícula y lista de palabras */
+.sopa-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: var(--espacio-l);
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .sopa-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contenedor del tablero */
+.sopa-tablero-wrap {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m);
+  box-shadow: var(--sombra-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio-m);
+  overflow: hidden;
+}
+
+/* Cuadrícula con Pointer Events */
+.sopa-grilla {
+  display: grid;
+  grid-template-columns: repeat(var(--sopa-tamano, 10), 1fr);
+  gap: 3px;
+  background-color: var(--borde);
+  padding: 3px;
+  border-radius: var(--radio-m);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 100%;
+  max-width: 540px;
+}
+
+.sopa-celda {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--superficie);
+  color: var(--texto-principal);
+  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+  font-weight: var(--peso-negrita);
+  font-family: var(--fuente-base);
+  border: none;
+  border-radius: var(--radio-s);
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.15s ease, transform 0.1s ease, color 0.15s ease;
+  touch-action: none;
+}
+
+.sopa-celda:hover {
+  background-color: var(--fondo);
+}
+
+/* Celda seleccionada mientras se arrastra */
+.sopa-celda--seleccionada {
+  background-color: var(--primario) !important;
+  color: var(--texto-inverso) !important;
+  transform: scale(1.08);
+  box-shadow: 0 0 8px rgba(67, 97, 238, 0.4);
+  z-index: 2;
+}
+
+/* Celda marcada como parte de una palabra encontrada */
+.sopa-celda--encontrada {
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+  font-weight: var(--peso-negrita);
+  border: 1px solid #10b981;
+}
+
+/* Celda revelada al rendirse */
+.sopa-celda--revelada {
+  background-color: #fef3c7 !important;
+  color: #92400e !important;
+  border: 1px dashed #f59e0b;
+}
+
+/* Panel lateral de palabras */
+.sopa-palabras-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.sopa-palabras-tarjeta {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m);
+  box-shadow: var(--sombra-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.sopa-palabras-titulo {
+  font-size: var(--tamano-m);
+  font-weight: var(--peso-negrita);
+  color: var(--texto-principal);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sopa-palabras-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-xs);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sopa-palabra-item {
+  background-color: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-s);
+  padding: 4px 10px;
+  font-size: var(--tamano-s);
+  font-weight: var(--peso-medio);
+  color: var(--texto-principal);
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.sopa-palabra-item--encontrada {
+  background-color: #d1fae5;
+  color: #065f46;
+  border-color: #10b981;
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.sopa-palabra-item--revelada {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-color: #f59e0b;
+  text-decoration: line-through;
+}
+
+/* Retroalimentación inmediata */
+.sopa-retro-contenedor {
+  width: 100%;
+}

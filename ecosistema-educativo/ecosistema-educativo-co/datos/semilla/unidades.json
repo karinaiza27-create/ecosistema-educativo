@@ -1,0 +1,34 @@
+[
+  {
+    "id": "uni_000001",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "asignaturaId": "asi_000001",
+    "titulo": "Prácticas Agroecológicas y Manejo de Suelos",
+    "orden": 1,
+    "visible": true
+  },
+  {
+    "id": "uni_000002",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "asignaturaId": "asi_000002",
+    "titulo": "Fundamentos de Producción Pecuaria y Bienestar Animal",
+    "orden": 1,
+    "visible": true
+  },
+  {
+    "id": "uni_000003",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "asignaturaId": "asi_000003",
+    "titulo": "Agentes Contaminantes y Calidad de los Recursos Naturales",
+    "orden": 1,
+    "visible": true
+  },
+  {
+    "id": "uni_000004",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "asignaturaId": "asi_000004",
+    "titulo": "Gestión de Residuos, Reciclaje y Economía Circular",
+    "orden": 1,
+    "visible": true
+  }
+]

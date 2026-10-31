@@ -1,0 +1,46 @@
+/* publico/css/modulos/editor-cancion.css · Estilos para el editor de canciones */
+
+.editor-cancion {
+  margin-top: var(--espacio-m);
+  margin-bottom: var(--espacio-xl);
+}
+
+.editor-cancion__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  margin-bottom: var(--espacio-l);
+  padding-bottom: var(--espacio-m);
+  border-bottom: 1px solid var(--borde);
+}
+
+.editor-cancion__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  background: var(--superficie);
+  padding: var(--espacio-l);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  box-shadow: var(--sombra-s);
+}
+
+.editor-cancion__subida {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-s);
+  flex-wrap: wrap;
+}
+
+.editor-cancion__audio-previa {
+  width: 100%;
+  margin-top: var(--espacio-s);
+}
+
+.editor-cancion__ayuda {
+  font-size: var(--tamano-xs);
+  color: var(--texto-secundario);
+  margin-top: calc(-1 * var(--espacio-xs));
+}

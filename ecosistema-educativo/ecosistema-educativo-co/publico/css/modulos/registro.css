@@ -1,0 +1,24 @@
+/* publico/css/modulos/registro.css · Estilos para el formulario de registro */
+
+.auth-contenedor {
+  max-width: 520px;
+  margin: var(--espacio-m) auto;
+  width: 100%;
+}
+
+.auth-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espacio-s);
+  cursor: pointer;
+  font-size: var(--tamano-s);
+  color: var(--texto);
+}
+
+.auth-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--primario);
+  cursor: pointer;
+}

@@ -7,7 +7,8 @@
     "start": "node servidor/server.js",
     "build": "node servidor/semilla.js",
     "semilla": "node servidor/semilla.js",
-    "crear-admin": "node servidor/crear-admin.js"
+    "crear-admin": "node servidor/crear-admin.js",
+    "sincronizar:supabase": "node servidor/sincronizar-supabase.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -1,0 +1,270 @@
+/* publico/css/base.css · Estilos base, reset y utilidades estructurales */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* --- Reset ligero --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente-base);
+  font-size: var(--tamano-m);
+  font-weight: var(--peso-normal);
+  line-height: var(--interlineado-amplio);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* --- Tipografía --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fuente-titulos);
+  color: var(--primario);
+  line-height: var(--interlineado-apretado);
+  font-weight: var(--peso-negrita);
+  margin-bottom: var(--espacio-s);
+}
+
+h1 {
+  font-size: var(--tamano-3xl);
+  font-weight: var(--peso-extranegrita);
+}
+
+h2 {
+  font-size: var(--tamano-2xl);
+  font-weight: var(--peso-negrita);
+}
+
+h3 {
+  font-size: var(--tamano-xl);
+  font-weight: var(--peso-seminegrita);
+}
+
+h4 {
+  font-size: var(--tamano-l);
+  font-weight: var(--peso-seminegrita);
+}
+
+h5 {
+  font-size: var(--tamano-m);
+  font-weight: var(--peso-seminegrita);
+}
+
+h6 {
+  font-size: var(--tamano-s);
+  font-weight: var(--peso-seminegrita);
+}
+
+p {
+  margin-bottom: var(--espacio-m);
+}
+
+small {
+  font-size: var(--tamano-xs);
+  color: var(--texto-suave);
+}
+
+/* --- Enlaces --- */
+a {
+  color: var(--info);
+  text-decoration: none;
+  transition: var(--transicion);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primario);
+}
+
+/* --- Foco visible --- */
+:focus-visible {
+  outline: 3px solid var(--info);
+  outline-offset: 2px;
+}
+
+/* --- Utilidades estructurales --- */
+.contenedor {
+  max-width: var(--ancho-maximo);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--espacio-m);
+  padding-right: var(--espacio-m);
+}
+
+.pila {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.pila--s {
+  gap: var(--espacio-s);
+}
+
+.pila--l {
+  gap: var(--espacio-l);
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  align-items: center;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: var(--espacio-m);
+}
+
+.oculto {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* --- Diseño general de la aplicación --- */
+#plantilla {
+  display: contents;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "encabezado encabezado"
+    "menu contenido"
+    "pie pie";
+  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.app-encabezado {
+  grid-area: encabezado;
+  position: sticky;
+  top: 0;
+  z-index: 800;
+}
+
+.encabezado__marca-grupo {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+}
+
+.encabezado__submarca {
+  font-size: var(--tamano-s);
+  font-weight: var(--peso-normal);
+  opacity: 0.9;
+}
+
+.encabezado__titulo-pagina {
+  font-size: var(--tamano-m);
+  font-weight: var(--peso-seminegrita);
+  color: var(--texto-inverso);
+  opacity: 0.95;
+}
+
+.app-menu {
+  grid-area: menu;
+  position: sticky;
+  top: 72px; /* PROVISIONAL */
+  height: calc(100vh - 72px); /* PROVISIONAL */
+  overflow-y: auto;
+}
+
+#contenido {
+  grid-area: contenido;
+  padding-top: var(--espacio-xl);
+  padding-bottom: var(--espacio-2xl);
+  min-width: 0;
+}
+
+.app-pie {
+  grid-area: pie;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .app-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 900;
+    transform: translateX(-100%);
+    transition: var(--transicion);
+  }
+
+  .app-menu.abierto {
+    transform: translateX(0);
+  }
+
+  .encabezado__titulo-pagina {
+    display: none;
+  }
+}
+

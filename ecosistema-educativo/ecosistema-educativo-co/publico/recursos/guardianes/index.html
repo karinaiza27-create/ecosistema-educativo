@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=3f8c8082-95ab-4e21-8b27-e71c1c99a4e3
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecosistema Educativo Digital Inteligente | Guardianes del Planeta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO INSTITUCIONAL -->
+  <header>
+    <div class="header-content">
+      <div class="avatar-badge">🌎♻️</div>
+      <h1>Guardianes del Planeta</h1>
+      <p><b>Ecosistema Educativo Digital Inteligente</b><br>
+      Misión Reciclaje: reconocer, clasificar y resolver situaciones sobre manejo adecuado de residuos en el campus universitario.</p>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN PRINCIPAL DEL ECOSISTEMA -->
+  <nav id="main-nav">
+    <button class="active-nav" onclick="goToTab('inicio')">🏠 Inicio</button>
+    <button onclick="goToTab('aprende')">📚 Aprende</button>
+    <button onclick="goToTab('practica')">🧩 Practica</button>
+    <button onclick="goToTab('juego')">🎮 Juega</button>
+    <button onclick="goToTab('ia')">🤖 IA y Multimedia</button>
+    <button onclick="goToTab('resultado')">🏆 Resultado</button>
+    <button onclick="goToTab('creditos')">👥 Créditos</button>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN 1: INICIO -->
+    <section id="inicio" class="active">
+      <div class="card hero">
+        <h2>¡Bienvenido, Guardián del Planeta!</h2>
+        <p>Este ecosistema integra recursos educativos digitales, una estación de práctica, una experiencia gamificada interactiva y funciones de inteligencia artificial para acompañar el aprendizaje sobre sostenibilidad y manejo adecuado de residuos.</p>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px;">
+          <button class="btn" onclick="goToTab('aprende')">Comenzar aprendizaje →</button>
+          <button class="btn gold" onclick="startMission()">🚀 Jugar Misión Reciclaje</button>
+          <a class="btn blue" href="https://canva.link/6kvutil910mw6o6" target="_blank" rel="noopener noreferrer">Ver presentación de socialización ↗</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🎯 Objetivos de aprendizaje</h2>
+        <ul style="padding-left: 20px; line-height: 1.8; margin-top: 10px;">
+          <li><b>Reconocer</b> residuos orgánicos, reciclables y de manejo especial presentes en el entorno universitario.</li>
+          <li><b>Clasificar</b> residuos adecuadamente de acuerdo con su categoría y contenedor designado.</li>
+          <li><b>Tomar decisiones responsables</b> y fundamentadas ante situaciones y dilemas reales del campus.</li>
+          <li><b>Utilizar recursos digitales, retroalimentación y tutoría inteligente</b> para fortalecer la cultura ambiental.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🧭 Ruta de aprendizaje del ecosistema</h2>
+        <p style="margin-bottom:14px; color:var(--text-muted);">Sigue esta secuencia formativa para maximizar tu impacto y obtener la certificación máxima:</p>
+        <div class="flow">
+          <span class="step">1. Aprende (Recursos)</span>
+          <span class="arrow">→</span>
+          <span class="step">2. Practica (Entrenamiento)</span>
+          <span class="arrow">→</span>
+          <span class="step">3. Juega (Misión Reciclaje)</span>
+          <span class="arrow">→</span>
+          <span class="step">4. Tutoría IA (EcoGuardián)</span>
+          <span class="arrow">→</span>
+          <span class="step">5. Certifícate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: APRENDE (RECURSOS DE LA TAREA 2) -->
+    <section id="aprende">
+      <div class="card">
+        <h2>📚 Recursos educativos — Tarea 2</h2>
+        <p>Esta sección recupera la colección publicada y la presentación de socialización desarrolladas en la Tarea 2 del proyecto áulico.</p>
+        <div class="notice">
+          <b>Evidencia Tarea 2:</b> El Producto 1 corresponde a la colección publicada con 4 recursos y fichas de curación, y el Producto 2 a la presentación de socialización desarrollada en Canva.
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="resource">
+          <div>
+            <span class="tag">Recurso principal</span>
+            <h3>📖 Colección de recursos</h3>
+            <p>Accede a la página índice interactiva con los cuatro recursos educativos y sus fichas de curación detalladas.</p>
+          </div>
+          <a class="btn" href="https://canva.link/ue7jsnlhnuv6xvb" target="_blank" rel="noopener noreferrer">Abrir colección ↗</a>
+        </div>
+
+        <div class="resource">
+          <div>
+            <span class="tag">Presentación</span>
+            <h3>🖥️ Socialización</h3>
+            <p>Presentación audiovisual utilizada para socializar los recursos y sensibilizar a la comunidad universitaria.</p>
+          </div>
+          <a class="btn blue" href="https://canva.link/6kvutil910mw6o6" target="_blank" rel="noopener noreferrer">Abrir presentación ↗</a>
+        </div>
+
+        <div class="resource">
+          <div>
+            <span class="tag">Actividad interactiva</span>
+            <h3>🧩 Clasificación</h3>
+            <p>Evidencia didáctica de clasificación y autoevaluación reflexiva sobre toma de decisiones ambientales.</p>
+          </div>
+          <a class="btn" href="https://canva.link/ue7jsnlhnuv6xvb" target="_blank" rel="noopener noreferrer">Ver recursos ↗</a>
+        </div>
+
+        <div class="resource">
+          <div>
+            <span class="tag">Consulta científica</span>
+            <h3>🔎 Fuentes y referencias</h3>
+            <p>Fundamentos técnicos y normativos sobre sostenibilidad, contaminación y gestión de residuos, incluyendo UNEP/ISWA y la EPA.</p>
+          </div>
+          <a class="btn blue" href="https://www.epa.gov/recycle/recycling-basics-and-benefits" target="_blank" rel="noopener noreferrer">Consultar EPA ↗</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px; text-align:center;">
+        <h3>¿Listo para poner a prueba tu conocimiento previo?</h3>
+        <p style="margin: 8px 0 16px; color:var(--text-muted);">Pasa a la estación de práctica interactiva o ingresa directamente al juego oficial.</p>
+        <button class="btn" onclick="goToTab('practica')">Ir a la Estación de Práctica →</button>
+        <button class="btn gold" onclick="startMission()">Iniciar Misión Reciclaje 🎮</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: PRACTICA (ESTACIÓN DE ENTRENAMIENTO PREVIO) -->
+    <section id="practica">
+      <div class="card">
+        <h2>🧩 Estación de Práctica Rápida</h2>
+        <p>Explora estas fichas pedagógicas interactivas sobre los residuos más comunes en el campus antes de comenzar la misión evaluada.</p>
+      </div>
+
+      <div class="flashcards-grid">
+        <div class="flashcard">
+          <div style="font-size:44px;">🍌</div>
+          <h3 style="margin:8px 0 4px; color:var(--g-deep);">Residuos de Alimentos</h3>
+          <p style="font-size:13px; color:var(--text-muted);">Cáscaras de banana, restos de frutas y café de la cafetería.</p>
+          <span class="flashcard-category cat-org">🟢 Orgánico Biodegradable</span>
+          <p style="font-size:12px; margin-top:8px; color:#2e7d32;">Se aprovecha en compostaje para nutrir jardines.</p>
+        </div>
+
+        <div class="flashcard">
+          <div style="font-size:44px;">📄</div>
+          <h3 style="margin:8px 0 4px; color:var(--g-deep);">Papel y Cartón Seco</h3>
+          <p style="font-size:13px; color:var(--text-muted);">Apuntes, fotocopias, carpetas y cajas sin grasa ni humedad.</p>
+          <span class="flashcard-category cat-rec">🔵 Reciclable Aprovechable</span>
+          <p style="font-size:12px; margin-top:8px; color:#1565c0;">Ahorra tala de árboles y agua en reprocesamiento.</p>
+        </div>
+
+        <div class="flashcard">
+          <div style="font-size:44px;">🍾</div>
+          <h3 style="margin:8px 0 4px; color:var(--g-deep);">Envases PET y Latas</h3>
+          <p style="font-size:13px; color:var(--text-muted);">Botellas plásticas vacías y latas de aluminio limpias.</p>
+          <span class="flashcard-category cat-rec">🔵 Reciclable Aprovechable</span>
+          <p style="font-size:12px; margin-top:8px; color:#1565c0;">Enjuagar y compactar para optimizar recolección.</p>
+        </div>
+
+        <div class="flashcard">
+          <div style="font-size:44px;">🔋</div>
+          <h3 style="margin:8px 0 4px; color:var(--g-deep);">Pilas, Baterías y RAEE</h3>
+          <p style="font-size:13px; color:var(--text-muted);">Pilas de botón, baterías y cargadores dañados de laboratorios.</p>
+          <span class="flashcard-category cat-esp">🟠 Manejo Especial Peligroso</span>
+          <p style="font-size:12px; margin-top:8px; color:#e65100;">¡Nunca a la basura común! Entregar en puntos verdes autorizados.</p>
+        </div>
+      </div>
+
+      <div class="card hero">
+        <h3>¡Es momento de la verdad!</h3>
+        <p>Demuestra tu habilidad en los 3 niveles del juego oficial.</p>
+        <button class="btn gold" onclick="startMission()">🚀 Comenzar Misión Reciclaje</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: JUEGO GAMIFICADO FUNCIONAL -->
+    <section id="juego">
+      
+      <!-- PORTADA / INSTRUCCIONES DEL JUEGO -->
+      <div id="game-intro-card" class="card hero">
+        <div style="font-size:64px; margin-bottom:8px;">🎮 🛡️ ♻️</div>
+        <h2>Guardianes del Planeta: Misión Reciclaje</h2>
+        <p>Experiencia gamificada para estudiantes universitarios: reconoce residuos, clasifícalos con precisión y resuelve dilemas reales en el campus.</p>
+
+        <div class="notice-info" style="text-align:left; max-width:760px; margin:18px auto;">
+          <h4 style="margin-bottom:8px; color:var(--blue);">📋 Estructura de la Misión (100 puntos en total):</h4>
+          <ul style="padding-left:20px; line-height:1.6; font-size:14px;">
+            <li><b>NIVEL 1 — RADAR AMBIENTAL:</b> 4 residuos a reconocer (5 pts c/u · Máx. 20 puntos).</li>
+            <li><b>NIVEL 2 — ESTACIÓN DE SEPARACIÓN:</b> 6 residuos para arrastrar y soltar (Drag & Drop) hacia sus contenedores correspondientes (5 pts c/u · Máx. 30 puntos).</li>
+            <li><b>NIVEL 3 — RESCATE DEL CAMPUS:</b> 5 casos reales en cafetería, biblioteca, patio, laboratorio y comité (10 pts c/u · Máx. 50 puntos).</li>
+          </ul>
+
+          <h4 style="margin:14px 0 6px; color:var(--blue);">⚖️ Sistema estricto de puntuación y oportunidades:</h4>
+          <ul style="padding-left:20px; line-height:1.6; font-size:14px;">
+            <li><b>Primer intento correcto:</b> Puntaje completo (5 pts en N1/N2; 10 pts en N3).</li>
+            <li><b>Primer error:</b> 0 puntos, se activa una <b>pista inteligente</b> y dispones de una <b>segunda oportunidad</b>.</li>
+            <li><b>Segundo intento correcto:</b> Puntaje reducido tras pista (3 pts en N1/N2; 5 pts en N3).</li>
+            <li><b>Segundo error:</b> 0 puntos en la actividad y se despliega la <b>explicación pedagógica formativa</b>.</li>
+            <li><b>Cero puntos negativos:</b> Nunca se restan puntos acumulados.</li>
+            <li><b>Aprobación oficial:</b> Mínimo <b>70/100 puntos</b> Y al menos <b>3 de 5 casos</b> del Nivel 3 resueltos correctamente.</li>
+          </ul>
+        </div>
+
+        <button class="btn gold" style="font-size:18px; padding:16px 32px;" onclick="startMission()">
+          🚀 ¡Iniciar Misión Reciclaje Ahora!
+        </button>
+      </div>
+
+      <!-- ÁREA ACTIVA DEL JUEGO (SE MUESTRA AL INICIAR) -->
+      <div id="game-active-area" style="display:none;">
+        
+        <!-- HUD DEL JUEGO: PUNTAJE Y PROGRESO -->
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">Puntaje Actual:</span>
+            <span class="hud-value" id="hud-score-value">0</span>
+            <span style="opacity:0.7; font-size:14px;">/ 100 pts</span>
+          </div>
+
+          <div class="level-indicator" id="hud-level-indicator">
+            📍 Nivel 1: Radar Ambiental
+          </div>
+
+          <div class="hud-progress-container">
+            <div class="hud-progress-bar" id="hud-progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- TARJETA DE ACTIVIDAD DINÁMICA -->
+        <div class="game-card">
+          <div id="activity-container">
+            <!-- Inyectado dinámicamente por game.js -->
+          </div>
+
+          <!-- CAJA DE RETROALIMENTACIÓN FORMATIVA -->
+          <div id="activity-feedback" class="feedback-box">
+            <!-- Inyectado dinámicamente según aciertos, pistas o errores -->
+          </div>
+
+          <!-- BOTÓN PARA AVANZAR A LA SIGUIENTE ACTIVIDAD -->
+          <div style="margin-top:20px;">
+            <button id="activity-next-btn" class="btn" style="display:none;" onclick="nextItem()">
+              Siguiente actividad →
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECCIÓN 5: IA GENERATIVA Y MULTIMEDIA -->
+    <section id="ia">
+      <div class="card">
+        <h2>🤖 Inteligencia Artificial Educativa: EcoGuardián IA</h2>
+        <p>Este ecosistema integra una arquitectura segura diseñada para conectar modelos de lenguaje generativos en un backend o función serverless sin exponer claves de API en el código público.</p>
+
+        <div class="notice">
+          <b>Arquitectura de Seguridad:</b> El frontend envía el contexto de aprendizaje (nivel actual, residuo o caso, opción seleccionada y concepto clave) a una función segura. La IA analiza el error y formula pistas reflexivas de corte socrático que guían al estudiante sin revelar la solución.
+        </div>
+      </div>
+
+      <!-- MÓDULO INTERACTIVO DE CONSULTA CON ECOGUARDIÁN IA -->
+      <div class="ai-interactive-card">
+        <h3>💬 Consultorio Inteligente del EcoGuardián</h3>
+        <p style="font-size:14px; color:var(--text-muted); margin-bottom:12px;">
+          ¿Tienes dudas sobre cómo reciclar un material del campus o sobre las reglas de la misión? Pregúntale a nuestro tutor inteligente:
+        </p>
+
+        <div class="ai-chat-box" id="ai-chat-messages">
+          <div class="chat-bubble ai">
+            <strong>🤖 EcoGuardián IA:</strong><br>
+            ¡Hola! Soy tu tutor ambiental universitario. Pregúntame sobre cualquier residuo (botellas PET, hojas secas, cargadores de celular, baterías o papel) o sobre los criterios de aprobación de la misión.
+          </div>
+        </div>
+
+        <div class="ai-input-row">
+          <input type="text" id="ai-user-query" placeholder="Ej: ¿Dónde se desecha una pila o cargador roto?" onkeydown="if(event.key==='Enter') askEcoGuardianAssistant()">
+          <button class="btn blue" onclick="askEcoGuardianAssistant()">Consultar IA</button>
+        </div>
+      </div>
+
+      <!-- MULTIMEDIA CON IA: PRESENTADOR AMBIENTAL -->
+      <div class="multimedia-card">
+        <div class="presenter-avatar-box">
+          <div class="avatar-circle" id="presenter-avatar-circle">
+            🌱👨‍🏫
+          </div>
+          <strong style="color:var(--g-deep); display:block; font-size:15px;">EcoGuardián</strong>
+          <span style="font-size:12px; color:var(--text-muted);">Presentador Multimedia</span>
+        </div>
+
+        <div class="presenter-content">
+          <div class="presenter-speech-bubble" id="presenter-bubble-text">
+            “¡Hola, futuro Guardián del Planeta! Te doy la bienvenida a este ecosistema educativo inteligente. Nuestra misión es transformar nuestro campus universitario en un modelo de sustentabilidad mediante el reconocimiento, separación y manejo adecuado de residuos. ¡Acompáñame en esta misión!”
+          </div>
+
+          <div class="voice-controls">
+            <button class="btn" onclick="speakPresenterText('bienvenida')">🔊 Escuchar Bienvenida</button>
+            <button class="btn outline" onclick="speakPresenterText('mision')">🎯 Explicación Misión</button>
+            <button class="btn outline" onclick="speakPresenterText('consejo')">💡 Consejos Clave</button>
+            <button class="btn danger" onclick="stopPresenterVoice()">⏹️ Detener</button>
+          </div>
+          <p style="font-size:12px; color:var(--text-muted); margin-top:8px;">
+            🎙️ Narración asistida mediante síntesis de voz nativa del navegador (accesible para estudiantes con discapacidad visual o preferencia auditiva).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: RESULTADO, INSIGNIAS Y CERTIFICADO -->
+    <section id="resultado">
+      
+      <div class="card result-header">
+        <div class="score-circle">
+          <span class="score-number" id="result-score-num">0</span>
+          <span class="score-max">de 100 pts</span>
+        </div>
+
+        <div id="result-status-pill" class="status-pill status-reinforce">
+          MISIÓN PENDIENTE O EN CURSO
+        </div>
+
+        <div id="result-custom-message" style="max-width:680px; margin:0 auto 16px;">
+          <p style="color:var(--text-muted);">
+            Completa la Misión Reciclaje en la sección <b>Juega</b> para calcular tu calificación oficial, desbloquear insignias y obtener tu Certificado.
+          </p>
+        </div>
+
+        <div class="score-stats">
+          <div class="stat-item">
+            <div class="stat-num" id="stat-score-l1">0 / 20</div>
+            <div class="stat-lbl">Nivel 1: Radar</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" id="stat-score-l2">0 / 30</div>
+            <div class="stat-lbl">Nivel 2: Separación</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" id="stat-score-l3">0 / 50</div>
+            <div class="stat-lbl">Nivel 3: Campus</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" id="stat-cases-n3">0 / 5</div>
+            <div class="stat-lbl">Casos N3 Resueltos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" id="stat-best-score">0 / 100</div>
+            <div class="stat-lbl">Mejor Histórico</div>
+          </div>
+        </div>
+
+        <div style="margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:10px;">
+          <button class="btn gold" onclick="startMission()">🔄 Repetir Misión Reciclaje</button>
+          <button class="btn outline" style="font-size:13.5px; padding:10px 18px;" onclick="resetStudentProgress()">🔄 Nuevo estudiante / Reiniciar progreso</button>
+        </div>
+      </div>
+
+      <!-- GALERÍA DE INSIGNIAS OFICIALES -->
+      <div class="card">
+        <h2>🏅 Insignias de la Misión</h2>
+        <p style="color:var(--text-muted);">Cada insignia premia el dominio demostrado en las distintas fases del ecosistema:</p>
+        
+        <div class="badges-grid" id="badges-container">
+          <!-- Inyectado dinámicamente por game.js -->
+        </div>
+      </div>
+
+      <!-- VISOR DEL CERTIFICADO (SI APROBÓ) -->
+      <div id="certificate-display-area" style="display:none;">
+        <!-- Inyectado dinámicamente por game.js -->
+      </div>
+
+    </section>
+
+    <!-- SECCIÓN 7: CRÉDITOS Y REFERENCIAS -->
+    <section id="creditos">
+      <div class="card">
+        <h2>👥 Créditos y referencias académicas</h2>
+        <p><b>Proyecto:</b> Ecosistema Educativo Digital Inteligente: integración de recursos, gamificación e inteligencia artificial.</p>
+        <p><b>Experiencia gamificada:</b> Guardianes del Planeta: Misión Reciclaje.</p>
+        <p><b>Grupo:</b> 11 — Proyecto Áulico Universitario.</p>
+        
+        <h3 style="margin-top:16px;">Fuentes recuperadas de la Tarea 2</h3>
+        <ul style="padding-left:20px; line-height:1.7; margin-top:8px;">
+          <li>United Nations Environment Programme & International Solid Waste Association. <i>Global Waste Management Outlook 2024: Beyond an age of waste — Turning rubbish into a resource</i>. UNEP/ISWA.</li>
+          <li>U.S. Environmental Protection Agency (EPA). <i>Recycling Basics and Benefits</i>. Recuperado de fuentes oficiales.</li>
+          <li>U.S. Environmental Protection Agency (EPA). <i>¿Cómo reciclar los materiales reciclables comunes?</i> Guías técnicas de manejo de residuos.</li>
+        </ul>
+        <p style="margin-top:10px;"><small>Las referencias anteriores se incorporan formalmente porque forman parte integral de la curación de contenidos desarrollada por el grupo en la Tarea 2.</small></p>
+      </div>
+
+      <div class="card">
+        <h2>🗺️ Arquitectura de navegación del ecosistema</h2>
+        <div class="flow">
+          <span class="step">Inicio</span>
+          <span class="arrow">→</span>
+          <span class="step">Recursos Tarea 2</span>
+          <span class="arrow">→</span>
+          <span class="step">Estación Práctica</span>
+          <span class="arrow">→</span>
+          <span class="step">Juego Tarea 3</span>
+          <span class="arrow">→</span>
+          <span class="step">EcoGuardián IA</span>
+          <span class="arrow">→</span>
+          <span class="step">Resultados e Insignias</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>🌎 <b>Guardianes del Planeta</b> · Ecosistema Educativo Digital Inteligente</p>
+    <p>Proyecto Áulico Universitario · Grupo 11 · 2026</p>
+    <p><small>Desarrollado con HTML5 semántico, CSS3 Vanilla responsive y JavaScript modular.</small></p>
+  </footer>
+
+  <!-- SCRIPT MODULAR DEL JUEGO Y ECOSISTEMA -->
+  <script src="game.js"></script>
+</body>
+</html>

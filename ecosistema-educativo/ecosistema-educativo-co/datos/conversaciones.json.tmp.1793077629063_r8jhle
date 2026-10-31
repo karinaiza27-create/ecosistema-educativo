@@ -1,0 +1,47 @@
+[
+  {
+    "participantes": [
+      "usu_000004",
+      "usu_000002"
+    ],
+    "ultimo": {
+      "texto": "Aviso a todo el paralelo: recuerden revisar la agenda académica.",
+      "fecha": "2026-10-27T05:07:08.975Z",
+      "autorId": "usu_000002"
+    },
+    "leidoHasta": {
+      "usu_000004": "2026-10-27T05:07:08.845Z",
+      "usu_000002": "2026-10-27T05:07:08.975Z"
+    },
+    "id": "con_000001",
+    "fecha": "2026-10-27T05:07:08.825Z"
+  },
+  {
+    "participantes": [
+      "usu_000002",
+      "usu_000005"
+    ],
+    "ultimo": {
+      "texto": "Aviso a todo el paralelo: recuerden revisar la agenda académica.",
+      "fecha": "2026-10-27T05:07:09.026Z",
+      "autorId": "usu_000002"
+    },
+    "leidoHasta": {
+      "usu_000002": "2026-10-27T05:07:09.026Z"
+    },
+    "id": "con_000002",
+    "fecha": "2026-10-27T05:07:09.012Z"
+  },
+  {
+    "participantes": [
+      "usu_000002",
+      "usu_000006"
+    ],
+    "ultimo": null,
+    "leidoHasta": {
+      "usu_000002": "2026-10-27T05:07:09.062Z"
+    },
+    "id": "con_000003",
+    "fecha": "2026-10-27T05:07:09.062Z"
+  }
+]

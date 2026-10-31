@@ -19,7 +19,7 @@ let noticiaActual = {
   categoria: "Institucional",
   temaId: "",
   destacada: false,
-  estado: "borrador"
+  estado: "publicado"
 };
 
 async function inicializar() {

@@ -1,0 +1,15 @@
+/* publico/css/modulos/privacidad.css · Estilos para el aviso de privacidad */
+
+.privacidad-tarjeta {
+  margin-top: var(--espacio-m);
+}
+
+.privacidad-seccion {
+  margin-bottom: var(--espacio-l);
+}
+
+.privacidad-seccion h2 {
+  font-size: var(--tamano-xl);
+  color: var(--primario);
+  margin-bottom: var(--espacio-xs);
+}

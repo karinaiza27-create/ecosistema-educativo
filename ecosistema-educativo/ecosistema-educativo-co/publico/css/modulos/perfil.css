@@ -1,0 +1,35 @@
+/* publico/css/modulos/perfil.css · Estilos para la vista de perfil de usuario */
+
+.perfil-layout {
+  max-width: 720px;
+  margin: var(--espacio-m) auto;
+  width: 100%;
+}
+
+.perfil-avatar-bloque {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-l);
+  margin-bottom: var(--espacio-m);
+}
+
+.perfil-avatar-preview {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--radio-completo);
+  object-fit: cover;
+  border: 3px solid var(--borde);
+  background-color: var(--fondo);
+  display: grid;
+  place-items: center;
+  font-size: var(--tamano-2xl);
+  color: var(--texto-suave);
+  flex-shrink: 0;
+}
+
+@media (max-width: 540px) {
+  .perfil-avatar-bloque {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

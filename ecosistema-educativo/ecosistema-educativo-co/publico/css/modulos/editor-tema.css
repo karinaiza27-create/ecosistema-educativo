@@ -1,0 +1,124 @@
+/* publico/css/modulos/editor-tema.css · Estilos para la ficha del tema y glosario */
+
+.editor-tema-layout {
+  width: 100%;
+  margin: var(--espacio-m) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.editor-tema-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+}
+
+.contador-palabras {
+  font-size: var(--tamano-xs);
+  color: var(--texto-suave);
+  margin-top: var(--espacio-xs);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contador-palabras--valido {
+  color: var(--exito);
+  font-weight: var(--peso-seminegrita);
+}
+
+.contador-palabras--alerta {
+  color: var(--advertencia);
+}
+
+.contador-palabras--exceso {
+  color: var(--error);
+  font-weight: var(--peso-negrita);
+}
+
+.lista-dinamica-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  margin-top: var(--espacio-xs);
+}
+
+.lista-dinamica-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.item-dinamico {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-s);
+  background-color: var(--fondo);
+  padding: var(--espacio-xs) var(--espacio-s);
+  border-radius: var(--radio-s);
+  border: 1px solid var(--borde);
+  font-size: var(--tamano-s);
+}
+
+.recurso-item-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  padding: var(--espacio-m);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-m);
+  background-color: var(--fondo);
+}
+
+.glosario-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  padding: var(--espacio-m);
+  border-radius: var(--radio-m);
+  background-color: var(--fondo);
+  border: 1px solid var(--borde);
+}
+
+.glosario-stats__indicadores {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-s);
+}
+
+.vista-previa-resumen {
+  background-color: var(--superficie);
+  border: 1px dashed var(--borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-m);
+  font-size: var(--tamano-s);
+  line-height: var(--interlineado-normal);
+}
+
+.btn-eliminar-item {
+  color: var(--error);
+  background: transparent;
+  border: none;
+  font-size: var(--tamano-s);
+  cursor: pointer;
+  padding: var(--espacio-xs);
+}
+
+.btn-eliminar-item:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .editor-tema-cabecera {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

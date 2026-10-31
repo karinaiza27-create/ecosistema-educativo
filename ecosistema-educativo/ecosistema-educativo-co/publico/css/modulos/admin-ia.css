@@ -1,0 +1,78 @@
+/* publico/css/modulos/admin-ia.css · Estilos para panel de configuración de IA */
+
+.admin-ia {
+  margin-top: var(--espacio-m);
+  margin-bottom: var(--espacio-xxl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.admin-ia__panel {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.admin-ia__estado-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  padding: var(--espacio-xs) var(--espacio-s);
+  border-radius: var(--radio-redondo);
+  font-size: var(--tamano-xs);
+  font-weight: var(--peso-negrita);
+}
+
+.admin-ia__sugerencias-modelos {
+  display: flex;
+  gap: var(--espacio-xs);
+  flex-wrap: wrap;
+  margin-top: var(--espacio-xs);
+}
+
+.admin-ia__btn-modelo {
+  background: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-s);
+  padding: var(--espacio-xs) var(--espacio-s);
+  font-size: var(--tamano-xs);
+  cursor: pointer;
+  color: var(--primario);
+  transition: all 0.15s ease;
+}
+
+.admin-ia__btn-modelo:hover {
+  background: var(--primario);
+  color: var(--texto-inverso);
+  border-color: var(--primario);
+}
+
+.admin-ia__resultado-prueba {
+  padding: var(--espacio-m);
+  border-radius: var(--radio-m);
+  font-size: var(--tamano-s);
+  display: none;
+}
+
+.admin-ia__resultado-prueba--exito {
+  display: block;
+  background-color: rgba(46, 125, 50, 0.1);
+  border: 1px solid var(--exito);
+  color: var(--exito);
+}
+
+.admin-ia__resultado-prueba--error {
+  display: block;
+  background-color: rgba(211, 47, 47, 0.1);
+  border: 1px solid var(--error);
+  color: var(--error);
+}

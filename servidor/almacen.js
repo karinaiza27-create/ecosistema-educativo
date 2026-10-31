@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import * as supabase from "./supabase.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIR_DATOS = path.resolve(__dirname, "../datos");
@@ -93,10 +94,23 @@ function rutaCol(col) {
 }
 
 export async function leer(col) {
+  if (supabase.estaConfigurado()) {
+    try {
+      const remotos = await supabase.obtenerColeccion(col);
+      if (remotos !== null) {
+        return remotos;
+      }
+    } catch {}
+  }
+
   const ruta = rutaCol(col);
   try {
     const raw = await fs.readFile(ruta, "utf8");
-    return JSON.parse(raw);
+    const datosLocales = JSON.parse(raw);
+    if (supabase.estaConfigurado() && Array.isArray(datosLocales) && datosLocales.length > 0) {
+      supabase.guardarColeccion(col, datosLocales).catch(() => {});
+    }
+    return datosLocales;
   } catch (err) {
     if (err.code === "ENOENT") return [];
     throw err;
@@ -107,6 +121,9 @@ export async function escribir(col, lista) {
   const ruta = rutaCol(col);
   return encolarEscritura(ruta, async () => {
     await escribirArchivoAtomico(ruta, JSON.stringify(lista, null, 2));
+    if (supabase.estaConfigurado()) {
+      await supabase.guardarColeccion(col, lista);
+    }
   });
 }
 
@@ -138,6 +155,9 @@ export async function agregar(col, reg) {
 
     lista.push(nuevoReg);
     await escribirArchivoAtomico(ruta, JSON.stringify(lista, null, 2));
+    if (supabase.estaConfigurado()) {
+      await supabase.guardarColeccion(col, lista);
+    }
     return nuevoReg;
   });
 }
@@ -161,6 +181,9 @@ export async function actualizar(col, id, cambios) {
     };
     lista[indice] = actualizado;
     await escribirArchivoAtomico(ruta, JSON.stringify(lista, null, 2));
+    if (supabase.estaConfigurado()) {
+      await supabase.guardarColeccion(col, lista);
+    }
     return actualizado;
   });
 }
@@ -177,6 +200,9 @@ export async function eliminar(col, id) {
     }
     const [eliminado] = lista.splice(indice, 1);
     await escribirArchivoAtomico(ruta, JSON.stringify(lista, null, 2));
+    if (supabase.estaConfigurado()) {
+      await supabase.guardarColeccion(col, lista);
+    }
     return eliminado;
   });
 }
@@ -200,15 +226,35 @@ export async function anexarLinea(archivo, obj) {
     throw new Error(`Nombre de archivo .jsonl inválido: "${archivo}"`);
   }
   const ruta = path.join(DIR_DATOS, nombreLimpio);
+  const col = `lineas/${nombreLimpio.replace(/\.jsonl$/, "")}`;
+
   return encolarEscritura(ruta, async () => {
     await verificarRespaldoDiario();
     await fs.mkdir(path.dirname(ruta), { recursive: true });
     await fs.appendFile(ruta, JSON.stringify(obj) + "\n", "utf8");
+    if (supabase.estaConfigurado()) {
+      try {
+        const existentes = (await supabase.obtenerColeccion(col)) || [];
+        existentes.push(obj);
+        await supabase.guardarColeccion(col, existentes);
+      } catch {}
+    }
   });
 }
 
 export async function leerLineas(archivo) {
   const nombreLimpio = archivo.endsWith(".jsonl") ? archivo : `${archivo}.jsonl`;
+  const col = `lineas/${nombreLimpio.replace(/\.jsonl$/, "")}`;
+
+  if (supabase.estaConfigurado()) {
+    try {
+      const lineasRemotas = await supabase.obtenerColeccion(col);
+      if (Array.isArray(lineasRemotas)) {
+        return lineasRemotas;
+      }
+    } catch {}
+  }
+
   const ruta = path.join(DIR_DATOS, nombreLimpio);
   try {
     const contenido = await fs.readFile(ruta, "utf8");
@@ -224,11 +270,27 @@ export async function leerLineas(archivo) {
 }
 
 export async function leerConfig(nombre) {
+  const nombreBase = nombre.replace(/\.json$/, "");
+  const clave = `config/${nombreBase}`;
+
+  if (supabase.estaConfigurado()) {
+    try {
+      const remotos = await supabase.obtenerColeccion(clave);
+      if (remotos !== null) {
+        return remotos;
+      }
+    } catch {}
+  }
+
   const nombreLimpio = nombre.endsWith(".json") ? nombre : `${nombre}.json`;
   const ruta = path.join(DIR_CONFIG, nombreLimpio);
   try {
     const raw = await fs.readFile(ruta, "utf8");
-    return JSON.parse(raw);
+    const datosLocales = JSON.parse(raw);
+    if (supabase.estaConfigurado() && datosLocales) {
+      supabase.guardarColeccion(clave, datosLocales).catch(() => {});
+    }
+    return datosLocales;
   } catch (err) {
     if (err.code === "ENOENT") return {};
     throw err;
@@ -236,11 +298,17 @@ export async function leerConfig(nombre) {
 }
 
 export async function escribirConfig(nombre, obj) {
+  const nombreBase = nombre.replace(/\.json$/, "");
+  const clave = `config/${nombreBase}`;
   const nombreLimpio = nombre.endsWith(".json") ? nombre : `${nombre}.json`;
   const ruta = path.join(DIR_CONFIG, nombreLimpio);
+
   return encolarEscritura(ruta, async () => {
     await fs.mkdir(DIR_CONFIG, { recursive: true });
     await escribirArchivoAtomico(ruta, JSON.stringify(obj, null, 2));
+    if (supabase.estaConfigurado()) {
+      await supabase.guardarColeccion(clave, obj);
+    }
     return obj;
   });
 }

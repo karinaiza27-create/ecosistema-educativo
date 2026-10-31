@@ -1,0 +1,67 @@
+/* publico/css/modulos/asignaturas.css · Estilos para la lista de mis asignaturas */
+
+.mis-asignaturas-layout {
+  width: 100%;
+  margin: var(--espacio-m) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.tarjeta-mi-asignatura {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+  height: 100%;
+  border-radius: var(--radio-l);
+  border: 1px solid var(--borde);
+  background-color: var(--superficie);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-1);
+  transition: var(--transicion);
+  text-decoration: none;
+  color: inherit;
+}
+
+.tarjeta-mi-asignatura:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sombra-2);
+  border-color: var(--primario);
+}
+
+.tarjeta-mi-asignatura__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--espacio-s);
+}
+
+.tarjeta-mi-asignatura__titulo {
+  font-size: var(--tamano-l);
+  font-weight: var(--peso-negrita);
+  color: var(--primario);
+  margin: 0;
+}
+
+.tarjeta-mi-asignatura__desc {
+  color: var(--texto-suave);
+  font-size: var(--tamano-s);
+  line-height: var(--interlineado-normal);
+  flex-grow: 1;
+}
+
+.tarjeta-mi-asignatura__avance {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  border-top: 1px solid var(--borde);
+  padding-top: var(--espacio-m);
+}
+
+.tarjeta-mi-asignatura__avance-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--tamano-xs);
+  color: var(--texto);
+}

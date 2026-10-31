@@ -14,3 +14,7 @@ services:
         value: gemini-2.5-flash
       - key: IA_CLAVE
         sync: false
+      - key: SUPABASE_URL
+        value: https://aklnxybcqzthlerfwdrw.supabase.co
+      - key: SUPABASE_KEY
+        value: sb_publishable_JcLrpvfy4QcgRI3V27gKsQ_HP1lQaxn

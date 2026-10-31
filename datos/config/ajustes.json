@@ -1,13 +1,13 @@
 {
-  "nombrePlataforma": "Ecosistema Educativo",
-  "maxSubidaMB": 10,
-  "limiteIADiario": 30,
-  "limiteTutorDiario": 40,
-  "chatEntreEstudiantes": true,
-  "alertasAdmin": false,
   "ia": {
     "proveedor": "gemini",
     "modelo": "gemini-3.8-flash",
-    "clave": ""
-  }
+    "clave": "AQ.Ab8RN6KvCJluz8qIlJzlaauhqsft6GPU97txSRL9LMtyAziXyA"
+  },
+  "maxSubidaMB": 10,
+  "alertasAdmin": false,
+  "limiteIADiario": 30,
+  "nombrePlataforma": "Ecosistema Educativo",
+  "limiteTutorDiario": 40,
+  "chatEntreEstudiantes": true
 }
